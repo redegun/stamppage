@@ -3,10 +3,10 @@ const less = require('gulp-less');
 const browserSync = require('browser-sync') .create();
 
 gulp.task('less', function() {
-  return gulp.src('app/less/**/*.less')
+  return gulp.src('app/less/style.less')
   .pipe(less())
-	.pipe(gulp.dest('app/css'))
-	.pipe(browserSync.reload({stream: true}));
+  .pipe(gulp.dest('app/css'))
+  .pipe(browserSync.reload({stream: true}));
 });
 
 
@@ -25,3 +25,8 @@ gulp.task('watch', ['less','browser-sync'], function() {
   gulp.watch('app/*.html', browserSync.reload);
 });
 
+gulp.task('default', [
+  'less',
+  'watch',
+  'browser-sync'
+]);

@@ -730,12 +730,10 @@ li:hover > .submenu {
   font-family: 'Open-Sans';
   src: url('../../fonts/OpenSans-Regular.ttf') format('truetype');
 }
-h1 {
-  color: #ffcf56;
-}
 .stamppage {
   max-width: 100%;
-  margin-top: 24px;
+  margin-top: 44px;
+  padding-bottom: 44px;
 }
 .stamppage-wrapper {
   max-width: 1420px;
@@ -743,10 +741,271 @@ h1 {
 }
 .stamppage-promo {
   display: flex;
+  align-items: center;
 }
 .stamppage-name {
   width: 600px;
+  margin-right: 160px;
+}
+.stamppage-triger ul {
+  display: flex;
+  font-family: Montserrat-Black;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #DEDEDE;
+}
+.stamppage-triger li {
+  margin-right: 16px;
+}
+.stamppage-header {
+  font-family: Montserrat-Black;
+  font-size: 44px;
+  color: #222222;
+  margin-top: 20px;
+  margin-bottom: 28px;
+}
+.stamppage-description {
+  font-family: Open-Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+  color: #222222;
+  margin-bottom: 60px;
+}
+.stamppage-button {
+  padding: 16px 32px 16px 32px;
+  font-family: 'Montserrat Medium';
+  font-size: 18px;
+  background: #FFCC4D;
+  box-shadow: 0px 4px 6px rgba(255, 204, 77, 0.36);
+  text-decoration: none;
+  color: #000;
+  border-radius: 4px;
 }
 .stamppage-img {
   width: 300px;
+}
+.stamporder {
+  max-width: 100%;
+  margin-top: 44px;
+  background: #F6F6F6;
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+.stamporder-wrapper {
+  max-width: 1420px;
+  margin: auto;
+}
+.stamppage-title {
+  font-family: Montserrat-Black;
+  font-size: 30px;
+  color: #222222;
+  margin-bottom: 40px;
+}
+.stamporder__items {
+  display: flex;
+}
+.stamporder__item {
+  background: #fff;
+  width: 320px;
+  border-radius: 8px;
+  margin-right: 24px;
+}
+.stamporder-cart {
+  padding: 20px;
+}
+.stamporder-img {
+  margin: auto;
+}
+.stamporder-cost__wrapper {
+  display: flex;
+  max-width: 260px;
+  align-items: center;
+  justify-content: space-between;
+}
+.stamporder-cost {
+  font-family: 'Montserrat-Bold';
+  font-size: 18px;
+  color: #EB5757;
+}
+.stamporder-cost__fast {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.stamporder-cost__fast img {
+  margin-right: 8px;
+}
+.stamporder-cost__fast p {
+  font-family: Montserrat-Black;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #828282;
+}
+.stamporder-cart h3 {
+  font-family: Montserrat-Black;
+  font-size: 19px;
+  color: #333333;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.stamporder-cart__description {
+  font-family: Open-Sans;
+  font-size: 14px;
+  color: #333333;
+}
+.stamporder__button {
+  text-decoration: none;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+}
+.stamporder__button__wrapper {
+  display: flex;
+  background: #FFCC4D;
+  max-width: 280px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 66px;
+}
+.stamporder__button__wrapper:hover {
+  background: #FFB600;
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 1366px) {
+  .stamppage {
+    padding-left: 30px;
+  }
+  .stamppage-wrapper {
+    max-width: 1366px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .stamppage {
+    padding-left: 30px;
+  }
+  .stamppage-wrapper {
+    max-width: 1366px;
+    margin: auto;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 1024px) {
+  .stamppage {
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+  .stamppage-wrapper {
+    max-width: 900px;
+    margin: auto;
+  }
+  .stamppage-name {
+    width: 600px;
+    margin-right: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .stamppage {
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  .stamppage-wrapper {
+    max-width: 740px;
+    margin: auto;
+  }
+  .stamppage-name {
+    width: 600px;
+    margin-right: 40px;
+  }
+  .stamppage-header {
+    font-family: Montserrat-Black;
+    font-size: 36px;
+    color: #222222;
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 414px) {
+  .stamppage {
+    margin-top: 20px;
+  }
+  .stamppage-wrapper {
+    max-width: 400px;
+  }
+  .stamppage-promo {
+    padding-left: 20px;
+  }
+  .stamppage-name {
+    max-width: 320px;
+    margin-right: 10px;
+  }
+  .stamppage-triger ul {
+    font-size: 12px;
+  }
+  .stamppage-triger li {
+    margin-right: 16px;
+  }
+  .stamppage-header {
+    font-family: Montserrat-Black;
+    font-size: 24px;
+    color: #222222;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .stamppage-description {
+    font-family: Open-Sans;
+    font-size: 16px;
+    color: #222222;
+    margin-bottom: 40px;
+  }
+  .stamppage-button {
+    font-size: 16px;
+  }
+  .stamppage-img {
+    display: none;
+  }
+}
+/* Custom, iPhone Retina */
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .stamppage {
+    margin-top: 20px;
+  }
+  .stamppage-wrapper {
+    max-width: 320px;
+    margin: auto;
+  }
+  .stamppage-promo {
+    padding-left: 20px;
+  }
+  .stamppage-name {
+    max-width: 320px;
+    margin-right: 20px;
+  }
+  .stamppage-triger ul {
+    font-size: 12px;
+  }
+  .stamppage-triger li {
+    margin-right: 16px;
+  }
+  .stamppage-header {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .stamppage-description {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .stamppage-button {
+    font-size: 16px;
+  }
+  .stamppage-img {
+    display: none;
+  }
 }
