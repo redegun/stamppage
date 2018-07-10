@@ -88,6 +88,10 @@
     padding-bottom: 66px;
   }
 
+  .stamporder__item-wrapper--link {
+      text-decoration: none;
+  }
+
 .stamporder-wrapper {
     max-width: 1420px;
     margin: auto;
@@ -110,6 +114,8 @@
     width: 320px;
     border-radius: 8px;
     margin-right: 24px;
+    box-sizing: border-box;
+    border: 1px solid #F2F2F2;
 }
 
 .stamporder-cart {
@@ -174,7 +180,7 @@
 .stamporder__button__wrapper {
  
     display: flex;
-    background: #FFCC4D;
+    background: #ffffff;
     max-width: 280px;
     padding: 20px;
     align-items: center;
@@ -184,9 +190,73 @@
     
 }
 
+.stamporder__button--first {
+    background: #FFCC4D;
+}
+
 .stamporder__button__wrapper:hover {
     background: #FFB600;
 }
 //____________________________________________________________
+
+.stamporder__optons-wrapper {
+   
+}
+
+.stamporder-optons {
+    padding: 20px;  
+}
+
+.stamporder-optons h3 {
+    font-family: @font-headers;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stamporder-optons h3:before {
+    content: "";
+    display: block;
+    background: url("../img/fast-cost-icon.svg") no-repeat;
+    width: 16px;
+    height: 20px;
+    float: left;
+    margin: 0 0px 0 0;
+    margin-left: -20px;
+    
+}
+
+.stamporder-optons h3.table-header:before {
+    content: "";
+    display: block;
+    background: url("../img/options-cost-icon.svg") no-repeat;
+    width: 16px;
+    height: 20px;
+    float: left;
+    margin: 0 0px 0 0;
+    margin-left: -20px;
+}
+
+.upsale-price {
+    width: 260px;
+    color: #333333
+}
+
+.upsale-price th {
+    font-family: @font-headers;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 0 4px 0;
+}
+
+.upsale-price td {
+    font-family: @font-body;
+    font-size: 14px;
+    padding: 4px 0 4px 0;
+    border-bottom: 1px solid rgb(226, 226, 226);
+
+    
+}
+
 
 @import "part/media.less";
