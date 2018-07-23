@@ -743,111 +743,26 @@ h6 {
 .page-product {
   max-width: 100%;
 }
-.p-product__breadcrumps-wrapper {
+.page-product-wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
   padding-top: 20px;
 }
-.product__breadcrumps {
-  font-family: Open-Sans;
-}
-.product__breadcrumps-first,
-.product__breadcrumps-links {
-  text-decoration: none;
-  color: #858585;
-  font-size: 12px;
-}
-.product__breadcrumps-links:before {
-  content: "\2013";
-  padding: 0 8px;
-}
-.p-product__wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
-  padding: 20px 0;
-}
-.product__preview {
-  display: flex;
-  flex-basis: 700px;
-  border: 1px solid #ebebeb;
-  margin-right: 24px;
-}
-.product__view {
-  width: 700px;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-.product__view-img {
-  max-width: 100%;
-  margin: auto;
-}
-.product__mini-view {
-  width: 50px;
-}
-.product__mini-img:hover {
-  border: 1px solid #EF8447;
-}
-.product__mini-img {
-  padding: 8px;
-  cursor: pointer;
-}
-.product__title {
-  font-family: 'Montserrat-Bold';
-  font-size: 30px;
-  margin-bottom: 24px;
-}
-.product__paragraph {
-  font-family: Open-Sans;
-  font-size: 14px;
-  color: #414141;
-  margin-bottom: 24px;
-}
-.product__color-items {
-  display: flex;
-  margin-bottom: 24px;
-}
-.product__color-item {
-  display: flex;
-  align-items: center;
-  border: 1px solid #D6D6D6;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 4px 16px 4px 0;
-  margin-right: 8px;
-  cursor: pointer;
-}
-.product__color-img {
-  padding: 0 4px 0 0;
-}
-.product__color-item:hover {
-  border: 1px solid #EF8447;
-}
-.product__color-name {
-  font-family: Open-Sans;
-  font-size: 16px;
-  color: #3E3E3E;
-}
-.current-img {
-  border: 1px solid #EF8447;
-}
-.product__param-items {
-  font-family: Open-Sans;
-  font-size: 14px;
-  color: #414141;
-  padding-bottom: 16px;
-  margin-bottom: 16px;
-  border-bottom: 1px solid #e9e9e9;
-}
-.product__param-header {
-  font-family: Open-Sans;
-  font-size: 18px;
+.product-form__title {
+  font-family: Montserrat-Black;
+  font-size: 24px;
   color: #000000;
   margin-bottom: 24px;
+}
+.product-form__header {
+  font-family: 'Montserrat-Bold';
+  font-size: 16px;
+  color: #353535;
+  margin-bottom: 24px;
+}
+.product-form__firm-items {
+  display: flex;
+  margin-bottom: 44px;
 }
 .product__stamp-type-items {
   font-family: Open-Sans;
@@ -855,36 +770,59 @@ h6 {
   width: 400px;
   color: #4352BC;
 }
-.product__stamp-radio {
+.firm-item__radio {
   display: none;
 }
-.product__stamp-name {
+.product-form__info-items {
+  margin-bottom: 64px;
+}
+.firm-item__label {
+  font-family: 'Montserrat-Bold';
   padding: 8px 8px;
   cursor: pointer;
-  margin-right: -5px;
+  margin-right: -1px;
   border: 1px solid #2E40BC;
+  color: #4352BC;
 }
-input[type=radio]:checked + .product__stamp-name {
+input[type=radio]:checked + .firm-item__label {
   color: #fff;
   background: #4352BC;
 }
-.product__price {
-  font-family: 'Montserrat-Bold';
-  font-size: 32px;
-  color: #F96969;
-  margin-bottom: 40px;
-}
-.product__price-header {
-  font-family: Open-Sans;
-  font-size: 18px;
-  color: #000000;
-  margin-bottom: 8px;
-}
-.product__price-paragraph {
-  font-family: Open-Sans;
+.product-form__info-item {
+  position: relative;
+  margin-bottom: 24px;
   font-size: 14px;
-  color: #414141;
-  margin-bottom: 8px;
+  font-family: Open-Sans;
+  color: #000;
+}
+.product-form__info-field {
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+}
+.product-form__info-name {
+  color: #999;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  font-size: 16px;
+}
+.product-form__info-field:focus {
+  outline: none;
+  border-bottom-color: #7a09e4;
+}
+.product-form__info-field:focus ~ .product-form__info-name,
+.product-form__info-field:valid ~ .product-form__info-name {
+  top: -10px;
+  font-size: 11px;
+  color: #b1b1b1;
+}
+.info-name__error-message {
+  font-size: 14px;
+  color: #ff0000;
 }
 .product__button-next {
   min-width: 300px;
@@ -899,11 +837,6 @@ input[type=radio]:checked + .product__stamp-name {
 }
 .product__fast-stamp {
   margin-bottom: 16px;
-}
-.product__faststamp-name {
-  font-family: Open-Sans;
-  font-size: 18px;
-  color: #000000;
 }
 @media only screen and (max-width: 1440px) {
   .p-product__breadcrumps-wrapper {
