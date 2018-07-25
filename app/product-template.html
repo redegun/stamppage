@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property="og:image" content="path/to/image.jpg">
-    <link rel="stylesheet" href="css/product-form.css">
+    <link rel="stylesheet" href="css/product-template.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
@@ -189,93 +189,99 @@
 
     <div class="page-product">
         <div class="page-product-wrapper">
-            <h2 class="product-form__title">Информация для изготовления новой печати</h2>
-            <h3 class="product-form__header">Форма организации</h3>
-            <p class="product-form__paragraph">Выбирете вашу форму организации</p>
+            <h2 class="product-form__title">Выберите шаблон для печати</h2>
+            <h3 class="product-form__header">Шаблоны новой печати для ИП</h3>
+            <p class="product-form__paragraph">Выберите печать кликнув по ней и нажмите продолжить</p>
 
-            <div class="product-form__wrapper">
 
-                <div class="product-form__form">
-                    <div class="product-form__firm-items">
-                        <div class="product-form__firm-item">
-                            <input class="firm-item__radio" type="radio" name="form-company" id="ip">
-                            <label class="firm-item__label" for="ip">ИП</label>
-                        </div>
-                        <div class="product-form__firm-item">
-                            <input class="firm-item__radio" type="radio" name="form-company" id="OOO">
-                            <label class="firm-item__label" for="OOO">ООО</label>
-                        </div>
-                        <div class="product-form__firm-item">
-                            <input class="firm-item__radio" type="radio" name="form-company" id="ZAO">
-                            <label class="firm-item__label" for="ZAO">ЗАО</label>
-                        </div>
-                        <div class="product-form__firm-item">
-                            <input class="firm-item__radio" type="radio" name="form-company" id="OAO">
-                            <label class="firm-item__label" for="OAO">ОАО</label>
-                        </div>
-                    </div>
 
-                    <h3 class="product-form__header">Реквизиты для печати</h3>
-                    <p class="product-form__paragraph">Заполните все поля</p>
-                    <div class="product-form__info-items">
-                        <div class="product-form__info-item">
-                            <input type="text" class="product-form__info-field" name="inn" id="inn" required>
-                            <label for="inn" class="product-form__info-name">ИНН*</label>
-                            <span class="info-name__error-message">Укажите ИНН</span>
-                        </div>
 
-                        <div class="product-form__info-item">
-                            <input type="text" class="product-form__info-field" name="inn" id="ogrnip" required>
-                            <label for="ogrnip" class="product-form__info-name">ОГРНИП*</label>
-                        </div>
+            <div class="product-template__wrapper">
+                <div class="product-shablon__item">
+                    <input type="radio" class="shablon-item__radio" name="Ip-tpl" id="01">
+                    <label class="shablon-item__label" for="01">
+                        <img class="shablon-item__img" src="/img/shablon-ip01.png" alt="">
+                    </label>
 
-                        <div class="product-form__info-item">
-                            <input type="text" class="product-form__info-field" name="city" id="city" required>
-                            <label for="city" class="product-form__info-name">Город*</label>
-                        </div>
-
-                        <div class="product-form__info-item">
-                            <input type="text" class="product-form__info-field" name="company-name" id="company-name" required>
-                            <label for="company-name" class="product-form__info-name">Полное название*</label>
-                        </div>
-                    </div>
                 </div>
+                <div class="product-shablon__item">
+                    <input type="radio" class="shablon-item__radio" name="Ip-tpl" id="02">
+                    <label class="shablon-item__label" for="02">
+                        <img class="shablon-item__img" src="/img/shablon-ip01.png" alt="">
+                    </label>
 
-                <div class="product-form__order-info">
-                    <div class="order-info__title">Заказ</div>
-                    <div class="order-info__preview-items">
-                        <div class="order-info__img">
-                            <img src="/img/product-shop.png" alt="">
-                        </div>
-                        <div class="order-info__description-items">
-                        <div class="order-info__description">Автоматическая оснастка GRM 46040 PLUS пластиковая с защитным боксом (серый корпос)
-                      
-                        </div>
-                        <div class="order-info__cost">500 Р</div>
-                        <div class="order-info__quantity">1 шт</div>
-                    </div>
-                    </div>
-
-
-                    <div class="order-info__total">
-                        <div class="order-info__total-goods">
-                            <div class="order-info__goods-name">Товар (1)</div>
-                            <div class="order-info__goods-price">420 Р</div>
-                        </div>
-                        <div class="order-info__total-goods">
-                            <div class="order-info__goods-name">Изготовление клише</div>
-                            <div class="order-info__goods-price">450 Р</div>
-                        </div>
-                        <div class="order-info__total-goods">
-                            <div class="order-info__goods-name">Доставка</div>
-                            <div class="order-info__goods-price">220 Р</div>
-                        </div>
-                        <div class="order-info__total-check">
-                            <div class="order-info__check-name">Итого к оплате</div>
-                            <div class="order-info__check-price">1090 Р</div>
-                        </div>
-                    </div>
                 </div>
+                <div class="product-shablon__item">
+                    <input type="radio" class="shablon-item__radio" name="Ip-tpl" id="03">
+                    <label class="shablon-item__label" for="03">
+                        <img class="shablon-item__img" src="/img/shablon-ip01.png" alt="">
+                    </label>
+
+                </div>
+                <div class="product-shablon__item">
+                    <input type="radio" class="shablon-item__radio" name="Ip-tpl" id="04">
+                    <label class="shablon-item__label" for="04">
+                        <img class="shablon-item__img" src="/img/shablon-ip01.png" alt="">
+                    </label>
+
+                </div>
+                <div class="product-shablon__item">
+                    <input type="radio" class="shablon-item__radio" name="Ip-tpl" id="05">
+                    <label class="shablon-item__label" for="05">
+                        <img class="shablon-item__img" src="/img/shablon-ip01.png" alt="">
+                    </label>
+
+                </div>
+                <div class="product-shablon__item">
+                    <input type="radio" class="shablon-item__radio" name="Ip-tpl" id="06">
+                    <label class="shablon-item__label" for="06">
+                        <img class="shablon-item__img" src="/img/shablon-ip01.png" alt="">
+                    </label>
+
+                </div>
+                <div class="product-shablon__item">
+                        <input type="radio" class="shablon-item__radio" name="Ip-tpl" id="07">
+                        <label class="shablon-item__label" for="07">
+                            <img class="shablon-item__img" src="/img/shablon-ip01.png" alt="">
+                        </label>
+    
+                    </div>
+                    <div class="product-shablon__item">
+                        <input type="radio" class="shablon-item__radio" name="Ip-tpl" id="08">
+                        <label class="shablon-item__label" for="08">
+                            <img class="shablon-item__img" src="/img/shablon-ip01.png" alt="">
+                        </label>
+    
+                    </div>
+                    <div class="product-shablon__item">
+                        <input type="radio" class="shablon-item__radio" name="Ip-tpl" id="09">
+                        <label class="shablon-item__label" for="09">
+                            <img class="shablon-item__img" src="/img/shablon-ip01.png" alt="">
+                        </label>
+    
+                    </div>
+                    <div class="product-shablon__item">
+                        <input type="radio" class="shablon-item__radio" name="Ip-tpl" id="10">
+                        <label class="shablon-item__label" for="10">
+                            <img class="shablon-item__img" src="/img/shablon-ip01.png" alt="">
+                        </label>
+    
+                    </div>
+                    <div class="product-shablon__item">
+                        <input type="radio" class="shablon-item__radio" name="Ip-tpl" id="11">
+                        <label class="shablon-item__label" for="11">
+                            <img class="shablon-item__img" src="/img/shablon-ip01.png" alt="">
+                        </label>
+    
+                    </div>
+                    <div class="product-shablon__item">
+                        <input type="radio" class="shablon-item__radio" name="Ip-tpl" id="12">
+                        <label class="shablon-item__label" for="12">
+                            <img class="shablon-item__img" src="/img/shablon-ip01.png" alt="">
+                        </label>
+    
+                    </div>
+
             </div>
             <a class="product__button-next" href="">Продолжить заказ</a>
         </div>
