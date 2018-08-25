@@ -8,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property="og:image" content="path/to/image.jpg">
-    <link rel="stylesheet" href="css/product-form.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/cart.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
@@ -185,78 +186,134 @@
 
     </header>
 
-
+    <!-- page-header end -->
 
     <div class="page-product">
         <div class="page-product-wrapper">
-            <h2 class="product-form__title">Информация для изготовления новой печати</h2>
-            <h3 class="product-form__header">Форма организации</h3>
-            <p class="product-form__paragraph">Выбирете вашу форму организации</p>
+            <h2 class="product-form__title">Оформление заказа</h2>
 
-            <div class="product-form__wrapper">
+            <!-- Авторизация -->
+            <div class="enter-privat">
+                <div class="enter-privat__description">
+                    <p class="product-form__paragraph">Если вы зарегистрированы, то войдите, чтобы добавить адрес и личные данные. После оформления заказа вы
+                        будете автоматически зарегистрированы с введёнными вами данными.</p>
+                </div>
+                <div class="enter-privat__button-enter">
+                    <a href="">
+                        <div class="button-enter">Вход</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Авторизация конец-->
 
-                <div class="product-form__form">
-                    <div class="product-form__firm-items">
-                        <div class="product-form__firm-item">
-                            <input class="firm-item__radio" type="radio" name="form-company" id="ip" checked>
-                            <label class="firm-item__label" for="ip">ИП</label>
-                        </div>
-                        <div class="product-form__firm-item">
-                            <input class="firm-item__radio" type="radio" name="form-company" id="OOO">
-                            <label class="firm-item__label" for="OOO">ООО</label>
-                        </div>
-                        <div class="product-form__firm-item">
-                            <input class="firm-item__radio" type="radio" name="form-company" id="ZAO">
-                            <label class="firm-item__label" for="ZAO">ЗАО</label>
-                        </div>
-                        <div class="product-form__firm-item">
-                            <input class="firm-item__radio" type="radio" name="form-company" id="OAO">
-                            <label class="firm-item__label" for="OAO">ОАО</label>
+            <div class="cart-order">
+
+
+                <div class="cart">
+                    <!-- Способ доставки -->
+                    <div class="delivery">
+                        <h2 class="product-form__header">Способы доставки</h2>
+                        <div class="delivey-items">
+                            <div class="delivery-item">
+                                <input class="delivery-item__radio" type="radio" name="delivery" id="delivery" checked>
+                                <label class="delivery-item__label" for="delivery">
+                                    <div class="delivery-title">Доставка курьером</div>
+                                    <div class="delivery-description">Заказ приедет по выбранному адресу</div>
+                                </label>
+                            </div>
+                            <div class="delivery-item">
+                                <input class="delivery-item__radio" type="radio" name="delivery" id="zone">
+                                <label class="delivery-item__label" for="zone">
+                                    <div class="delivery-title">Самовывоз</div>
+                                    <div class="delivery-description">Забрать из Нахабино, Вокзальная, д. 25, офис 110</div>
+                                </label>
+                            </div>
+
                         </div>
                     </div>
+                    <!-- Способ доставки конец -->
 
-                    <h3 class="product-form__header">Реквизиты для печати</h3>
-                    <p class="product-form__paragraph">Заполните все поля</p>
+                    <!-- Форма для доставки -->
+                    <h3 class="product-form__header">Данные получателя</h3>
+                    <p class="product-form__paragraph">Пожалуйста, указывайте реальные данные — у вас могут попросить паспорт, прежде чем вручить оплаченный
+                        заказ.</p>
                     <div class="product-form__info-items">
                         <div class="product-form__info-item">
-                            <input type="text" class="product-form__info-field" name="inn" id="inn" required>
-                            <label for="inn" class="product-form__info-name">ИНН*</label>
-                            <span class="info-name__error-message">Укажите ИНН</span>
+                            <input type="text" class="product-form__info-field" name="adress" id="adress" required>
+                            <label for="adress" class="product-form__info-name">Адрес доставки*</label>
+                            <span class="info-name__error-message">Укажите адрес</span>
                         </div>
 
                         <div class="product-form__info-item">
-                            <input type="text" class="product-form__info-field" name="inn" id="ogrnip" required>
-                            <label for="ogrnip" class="product-form__info-name">ОГРНИП*</label>
+                            <input type="text" class="product-form__info-field" name="name" id="name" required>
+                            <label for="name" class="product-form__info-name">Фамилия, имя, отчество*</label>
                         </div>
 
                         <div class="product-form__info-item">
-                            <input type="text" class="product-form__info-field" name="city" id="city" required>
-                            <label for="city" class="product-form__info-name">Город*</label>
+                            <input type="text" class="product-form__info-field" name="mail" id="mail" required>
+                            <label for="mail" class="product-form__info-name">Электронная почта*</label>
                         </div>
 
                         <div class="product-form__info-item">
-                            <input type="text" class="product-form__info-field" name="company-name" id="company-name" required>
-                            <label for="company-name" class="product-form__info-name">Полное название*</label>
+                            <input type="text" class="product-form__info-field" name="phone" id="phone" required>
+                            <label for="phone" class="product-form__info-name">Телефон</label>
+                        </div>
+
+                        <div class="checkout__checkbox">
+                            <input type="checkbox" class="checkout__checkbox-phone" name="checkbox" id="checkbox">
+                            <label for="checkbox" class="checkout__checkbox-name">Позвоните мне для уточнения заказа</label>
                         </div>
                     </div>
+                    <!-- Форма для доставки конец-->
+
+                    <!-- Способ доставки -->
+                    <div class="delivery">
+                        <h2 class="product-form__header">Способ оплаты</h2>
+                        <div class="delivey-items">
+                            <div class="delivery-item">
+                                <input class="delivery-item__radio" type="radio" name="pay" id="pay-oline" checked>
+                                <label class="delivery-item__label" for="pay-oline">
+                                    <div class="delivery-title">Оплата онлайн</div>
+                                    <div class="delivery-description">Банковской картой</div>
+                                </label>
+                            </div>
+                            <div class="delivery-item">
+                                <input class="delivery-item__radio" type="radio" name="pay" id="cash">
+                                <label class="delivery-item__label" for="cash">
+                                    <div class="delivery-title">Наличными</div>
+                                    <div class="delivery-description">При получении</div>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Способ доставки конец -->
+                    <h3 class="product-form__header">Дополнительные данные</h3>
+                    <div class="product-form__info-item">
+                            <input type="text" class="product-form__info-field" name="comment" id="comment" required>
+                            <label for="comment" class="product-form__info-name">Ваш комментарий</label>
+                            <div class="form-comment">Расскажите, как быстрее добраться к вам, укажите код домофона или другую информацию, которая может пригодиться курьеру.</div>
+                        </div>
                 </div>
 
-                <div class="product-form__order-info">
+                <!-- Форма заказа -->
+                <div class="cart-form__order-info">
                     <div class="order-info__title">Заказ</div>
+                    <!-- заказанный товар -->
                     <div class="order-info__preview-items">
                         <div class="order-info__img">
                             <img src="/img/product-shop.png" alt="">
                         </div>
                         <div class="order-info__description-items">
-                        <div class="order-info__description">Автоматическая оснастка GRM 46040 PLUS пластиковая с защитным боксом (серый корпос)
-                      
+                            <div class="order-info__description">Автоматическая оснастка GRM 46040 PLUS пластиковая с защитным боксом (серый корпос)
+
+                            </div>
+                            <div class="order-info__cost">500 Р</div>
+                            <div class="order-info__quantity">1 шт</div>
                         </div>
-                        <div class="order-info__cost">500 Р</div>
-                        <div class="order-info__quantity">1 шт</div>
                     </div>
-                    </div>
-
-
+                    <!-- заказанный товар конец-->
+                    <!-- Состав заказа -->
                     <div class="order-info__total">
                         <div class="order-info__total-goods">
                             <div class="order-info__goods-name">Товар (1)</div>
@@ -275,10 +332,19 @@
                             <div class="order-info__check-price">1090 Р</div>
                         </div>
                     </div>
+                    <!-- Состав заказа  конец-->
+                    <div class="button-order">
+                        <a href="">
+                            <div class="button">Отправить заказ</div>
+                        </a>
+                    </div>
+                    <div class="order-info__button-description">Нажав «Отправить заказ», вы соглашаетесь c <a href="#">условиями использования</a> </div>
                 </div>
+                <!-- Форма заказа конец-->
+
             </div>
-            <a class="product__button-next" href="">Продолжить заказ</a>
         </div>
+    </div>
     </div>
 </body>
 

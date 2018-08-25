@@ -8,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property="og:image" content="path/to/image.jpg">
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/product-form.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
@@ -184,87 +185,153 @@
         </div>
 
     </header>
+    <div class="page-cart">
+        <div class="page-cart__wrapper">
+            <h2 class="product-cart__title">Ваша корзина</h2>
 
-    <div class="page-product">
-            <div class="p-product__breadcrumps-wrapper">
+            <div class="cart-order">
+
+                <div class="cart">
+                    <div class="cart-items">
+
+                        <!-- Карточка товара -->
+                        <div class="cart-item">
+                            <div class="cart-item__img">
+                                <img src="/img/cart-product.png" alt="">
+                            </div>
+                            <div class="cart-item__description">
+                                <div class="cart-item__title-product">Товар</div>
+                                <div class="cart__descripton-item">Автоматическая оснастка GRM 46040 PLUS пластиковая с защитным боксом (серый корпос)</div>
+                                <div class="cart-item__title">Услуга</div>
+                                <div class="cart__descripton-item">Изготовление клише</div>
+                                <div class="cart__descripton-item">Новая печать ИП</div>
+                                <div class="cart__descripton-item">Шаблон 1</div>
+                                <div class="cart__descripton-image">
+                                    <img src="/img/shablon-ip01.png" alt="">
+                                </div>
+                                <div class="cart-item__change">
+                                    <a href="">Изменить</a>
+                                </div>
+                            </div>
+
+                            <div class="cart-item__options">
+
+                                <div class="cart-item__count">
+                                    <div class="count_wraper">
+                                        <div class="cart-item__count-minus">–</div>
+                                        <div class="cart-item__count-number">
+                                            <input type="number" name="count" value="1" min="1" class="count-field">
+                                        </div>
+                                        <div class="cart-item__count-plus">+</div>
+                                    </div>
+                                </div>
+                                <div class="cart-item__price">840₽</div>
+                                <div class="cart-item__remove">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" xml:space="preserve">
+                                        <path id="trash" d="M3 6v18h18v-18h-18zm5 14c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm5 0c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm5 0c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm4-18v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.315c0 .901.73 2 1.631 2h5.712z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Карточка товара конец-->
+
+                          <!-- Карточка товара -->
+                          <div class="cart-item">
+                                <div class="cart-item__img">
+                                    <img src="/img/cart-product.png" alt="">
+                                </div>
+                                <div class="cart-item__description">
+                                    <div class="cart-item__title-product">Товар</div>
+                                    <div class="cart__descripton-item">Автоматическая оснастка GRM 46040 PLUS пластиковая с защитным боксом (серый корпос)</div>
+                                    <div class="cart-item__title">Услуга</div>
+                                    <div class="cart__descripton-item">Изготовление клише</div>
+                                    <div class="cart__descripton-item">Новая печать ИП</div>
+                                    <div class="cart__descripton-item">Шаблон 1</div>
+                                    <div class="cart__descripton-image">
+                                        <img src="/img/shablon-ip01.png" alt="">
+                                    </div>
+                                    <div class="cart-item__change">
+                                        <a href="">Изменить</a>
+                                    </div>
+                                </div>
     
-            <div class="product__breadcrumps">
-                 <a class="product__breadcrumps-first"href="">П4</a>
-                <a class="product__breadcrumps-links"href="">Печати и штампы</a>
-                <a class="product__breadcrumps-links"href="">Оснастки</a>
+                                <div class="cart-item__options">
+    
+                                    <div class="cart-item__count">
+                                        <div class="count_wraper">
+                                            <div class="cart-item__count-minus">–</div>
+                                            <div class="cart-item__count-number">
+                                                <input type="number" name="count" value="1" min="1" class="count-field">
+                                            </div>
+                                            <div class="cart-item__count-plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item__price">840₽</div>
+                                    <div class="cart-item__remove">
+    
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" xml:space="preserve">
+                                            <path id="trash" d="M3 6v18h18v-18h-18zm5 14c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm5 0c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm5 0c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm4-18v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.315c0 .901.73 2 1.631 2h5.712z"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Карточка товара конец-->
+
+                    </div>
+                </div>
+
+                <div class="cart-form__order-info">
+                    <div class="order-info__title">Заказ</div>
+                    <div class="order-info__preview-items">
+                        <div class="order-info__img">
+                            <img src="/img/product-shop.png" alt="">
+                        </div>
+                        <div class="order-info__description-items">
+                            <div class="order-info__description">Автоматическая оснастка GRM 46040 PLUS пластиковая с защитным боксом (серый корпос)
+
+                            </div>
+                            <div class="order-info__cost">500 Р</div>
+                            <div class="order-info__quantity">1 шт</div>
+                        </div>
+                    </div>
+
+
+                    <div class="order-info__total">
+                        <div class="order-info__total-goods">
+                            <div class="order-info__goods-name">Товар (1)</div>
+                            <div class="order-info__goods-price">420 Р</div>
+                        </div>
+                        <div class="order-info__total-goods">
+                            <div class="order-info__goods-name">Изготовление клише</div>
+                            <div class="order-info__goods-price">450 Р</div>
+                        </div>
+                        <div class="order-info__total-goods">
+                            <div class="order-info__goods-name">Доставка</div>
+                            <div class="order-info__goods-price">220 Р</div>
+                        </div>
+                        <div class="order-info__total-check">
+                            <div class="order-info__check-name">Итого к оплате</div>
+                            <div class="order-info__check-price">1090 Р</div>
+                        </div>
+
+                    </div>
+                    <div class="button-order">
+                        <a href="">
+                            <div class="button">Оформить заказ</div>
+                        </a>
+                    </div>
+
+
+
+                </div>
+
             </div>
-                    </div>
-                </div>
-
-    <div class="page-product">
-        <div class="p-product__wrapper">
-
-            <div class="product__preview">
-
-                <div class="product__mini-view">
-                    <div class="product__mini-img">
-                        <img src="/img/color-img2.png" alt="">
-                    </div>
-                    <div class="product__mini-img">
-                        <img src="/img/color-img2.png" alt="">
-                    </div>
-                    <div class="product__mini-img">
-                        <img src="/img/color-img2.png" alt="">
-                    </div>
-                </div>
-
-                <div class="product__view">
-                    <img class="product__view-img" src="/img/product-view.png" alt="">
-                </div>
-            </div>
-
-
-
-
-
-            <div class="product__description">
-                <h1 class="product__title">Автоматическая оснастка GRM 46040 PLUS пластиковая с защитным боксом (серый корпос)</h1>
-                <p class="product__paragraph">Цвет товара:</p>
-                <div class="product__color-items">
-                    <div class="product__color-item current-img">
-                        <img class="product__color-img " src="/img/color-img.png" alt="">
-                        <p class="product__color-name">Синий</p>
-                    </div>
-                    <div class="product__color-item">
-                        <img class="product__color-img" src="/img/color-img.png" alt="">
-                        <p class="product__color-name">Синий</p>
-                    </div>
-                </div>
-                <ul class="product__param-items">
-                    <li class="product__param-item">Диаметр, мм: 40</li>
-                    <li class="product__param-item">Сменная подушка: GRM 46040</li>
-                    <li class="product__param-item">Применение: для круглой печати предприятия</li>
-                </ul>
-                <div class="product__param-header">Изготовление печати</div>
-                <div class="product__stamp-type-items">
-                    <input type="radio" class="product__stamp-radio" name="change-stamp" value="new-stamp" id="new-stamp" checked>
-                    <label class="product__stamp-name" for="new-stamp">Новая печать</label>
-                    <input type="radio" class="product__stamp-radio" name="change-stamp" value="new-stamp2" id="new-stamp2">
-                    <label class="product__stamp-name" for="new-stamp2">Печать по оттиску</label>
-                    <input type="radio" class="product__stamp-radio" name="change-stamp" value="new-stamp3" id="new-stamp3">
-                    <label class="product__stamp-name" for="new-stamp3">Без клише</label>
-                </div>
-                <p class="product__paragraph">Если вы изготавливаете печать впервые выберете новую печать. Если у вас уже есть печать, выберете печать
-                    по оттиску, далее потребуется загрузить скан старой печати.</p>
-                <input type="checkbox" class="product__fast-stamp" name="faststamp" id="faststamp">
-                <label class="product__faststamp-name" for="faststamp">Срочная печать</label>
-                <p class="product__paragraph">Заказы на изготовление срочной печати принимаются только до 15:00</p>
-                
-                <div class="product__price-header">Цена:</div>
-                <p class="product__price-paragraph">Стоимоcть оснастки и изготовлния:</p>
-                
-                <div class="product__price">820₽</div>
-                
-                <a class="product__button-next" href="">Продолжить заказ</a>
-            </div>
-
         </div>
     </div>
+
 </body>
 
 </html>
