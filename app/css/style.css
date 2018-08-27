@@ -730,6 +730,14 @@ li:hover > .submenu {
   font-family: 'Open-Sans';
   src: url('../../fonts/OpenSans-Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Open-Sans-Bold';
+  src: url('../../fonts/OpenSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open-Sans-Extra';
+  src: url('../../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+}
 h6 {
   font-family: Montserrat-Black;
   font-size: 12px;
@@ -739,9 +747,6 @@ h6 {
 .beating {
   margin-bottom: 15px;
   margin-top: 20px;
-}
-.white {
-  color: #fff;
 }
 .stamppage {
   max-width: 100%;
@@ -954,6 +959,22 @@ h6 {
   padding: 4px 0 4px 0;
   border-bottom: 1px solid #e2e2e2;
 }
+.filter {
+  display: flex;
+  background: #fff;
+  font-family: Open-Sans;
+  font-size: 14px;
+  margin-bottom: 24px;
+  padding: 16px;
+  border-radius: 3px;
+  max-width: 1300px;
+}
+.filter-item {
+  margin-right: 24px;
+}
+.sort {
+  color: #747474;
+}
 .catalog-items__wrapper {
   max-width: 1420px;
   margin: auto;
@@ -1109,6 +1130,9 @@ h6 {
     max-width: 1300px;
     margin: 0 auto;
   }
+  .filter {
+    max-width: 1230px;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 1366px) {
@@ -1182,6 +1206,9 @@ h6 {
   .stamporder-template__item a {
     margin-right: 60px;
   }
+  .filter {
+    max-width: 1150px;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 1024px) {
@@ -1246,6 +1273,12 @@ h6 {
   }
   .stamporder-template__item li {
     margin-bottom: 15px;
+  }
+  .stamporder-template__items img {
+    display: none;
+  }
+  .filter {
+    max-width: 900px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1316,6 +1349,9 @@ h6 {
   }
   .stamporder-template__items img {
     display: none;
+  }
+  .filter {
+    max-width: 660px;
   }
 }
 /* Custom, iPhone Retina */
@@ -1469,6 +1505,14 @@ h6 {
   .stamporder-template__items img {
     display: none;
   }
+  .filter {
+    max-width: 305px;
+    margin: 0 auto;
+    background: none;
+  }
+  .sort {
+    display: none;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 375px) {
@@ -1554,6 +1598,15 @@ h6 {
     width: 300px;
     margin-right: 20px;
     margin-bottom: 20px;
+  }
+  .filter {
+    max-width: 300px;
+    margin: 0 auto;
+    background: none;
+    padding: 0;
+  }
+  .sort {
+    display: none;
   }
 }
 /* Custom, iPhone Retina */
@@ -1647,6 +1700,16 @@ h6 {
     padding-left: 30px;
   }
   .stamporder-template__items img {
+    display: none;
+  }
+  .filter {
+    max-width: 280px;
+    margin: 0 auto;
+    background: none;
+    padding: 0;
+    font-size: 13px;
+  }
+  .sort {
     display: none;
   }
 }

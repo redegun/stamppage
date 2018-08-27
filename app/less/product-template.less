@@ -83,8 +83,8 @@ input[type=radio]:checked + .shablon-item__label {
 
 
 .product__button-next {
-
-    min-width: 300px;
+    display: block;
+    max-width: 200px;
     text-decoration: none;
     padding: 16px 40px 16px 40px;
     background: #FFCC4D;
@@ -92,7 +92,28 @@ input[type=radio]:checked + .shablon-item__label {
     border-radius: 4px;
     font-size: 14px;
     color: #0B0000;
+    text-align: center;
     font-family: @font-bold;
+}
+
+.product__button-next:hover {
+    background: #FFB600;
+}
+
+.step {
+    display: flex;
+    font-family: @font-body;
+    font-size: 14px;
+    color: #D1D1D1;
+    margin-top: 64px;
+}
+
+.step-item {
+    margin-right: 24px;
+}
+
+.current-step {
+    color: #000;
 }
 
 

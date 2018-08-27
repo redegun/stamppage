@@ -811,7 +811,8 @@ input[type=radio]:checked + .shablon-item__label {
   z-index: 10;
 }
 .product__button-next {
-  min-width: 300px;
+  display: block;
+  max-width: 200px;
   text-decoration: none;
   padding: 16px 40px 16px 40px;
   background: #FFCC4D;
@@ -819,11 +820,38 @@ input[type=radio]:checked + .shablon-item__label {
   border-radius: 4px;
   font-size: 14px;
   color: #0B0000;
+  text-align: center;
   font-family: 'Montserrat-Bold';
+}
+.product__button-next:hover {
+  background: #FFB600;
+}
+.step {
+  display: flex;
+  font-family: Open-Sans;
+  font-size: 14px;
+  color: #D1D1D1;
+  margin-top: 64px;
+}
+.step-item {
+  margin-right: 24px;
+}
+.current-step {
+  color: #000;
 }
 @media only screen and (max-width: 1440px) {
   .page-product-wrapper {
     max-width: 1300px;
+  }
+  .step {
+    display: flex;
+    font-family: Open-Sans;
+    font-size: 12px;
+    color: #D1D1D1;
+    margin-top: 64px;
+  }
+  .step-item {
+    margin-right: 20px;
   }
 }
 /* Custom, iPhone Retina */
