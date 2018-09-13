@@ -752,6 +752,7 @@ h6 {
   max-width: 100%;
   padding-bottom: 66px;
   padding-top: 44px;
+  padding-left: 20px;
 }
 .stamppage-wrapper {
   max-width: 1420px;
@@ -814,6 +815,7 @@ h6 {
   background: #F6F6F6;
   padding-top: 36px;
   padding-bottom: 36px;
+  padding-left: 20px;
 }
 .stamporder__item-wrapper {
   margin-bottom: 44px;
@@ -1228,6 +1230,7 @@ h6 {
     margin-top: 0px;
     padding-top: 36px;
     padding-bottom: 36px;
+    padding-left: 0px;
   }
   .stamporder-wrapper {
     max-width: 950px;
@@ -1303,6 +1306,7 @@ h6 {
     margin-top: 0px;
     padding-top: 36px;
     padding-bottom: 36px;
+    padding-left: 10px;
   }
   .stamporder-wrapper {
     max-width: 720px;
@@ -1402,6 +1406,7 @@ h6 {
     margin-top: 0px;
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 0;
   }
   .stamporder-wrapper {
     max-width: 414px;
@@ -1521,6 +1526,7 @@ h6 {
     margin-top: 0px;
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 0;
   }
   .stamporder-wrapper {
     max-width: 375px;
@@ -1651,6 +1657,9 @@ h6 {
   }
   .stamppage-img {
     display: none;
+  }
+  .stamporder {
+    padding-left: 0;
   }
   .stamporder-wrapper {
     max-width: 320px;
