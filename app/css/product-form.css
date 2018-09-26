@@ -748,6 +748,17 @@ h6 {
   margin-bottom: 15px;
   margin-top: 20px;
 }
+.seo-form {
+  max-width: 100%;
+  padding: 20px;
+  border: 1px solid #676767;
+}
+.page {
+  max-width: 100%;
+}
+.content {
+  margin: 0 auto;
+}
 .stamppage {
   max-width: 100%;
   padding-bottom: 66px;

@@ -9,10 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property="og:image" content="path/to/image.jpg">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
 
 </head>
 
@@ -20,6 +19,30 @@
 
     <!-- page-header -->
     <header>
+
+        <!-- Modal Form for QuickOrder -->
+        <div class="modal-overlay" id="modal-stamp-order-form">
+                <form class="modal-form js-validateForm" action="" method="" onsubmit="validateForm(this);return">
+                    <span class="close" onclick="modalFormClose();" title="Закрыть форму">&times;</span>
+                    <div class="modal-form__content">
+                        <div class="modal-form__title">Заявка на изготовление печати</div>
+                        <div class="product-form__info-item">
+                            <input type="text" class="product-form__info-field" onkeydown="checkFilledInput(this);" onkeyup="labelFilledInput(this);" name="name" id="name" data-req>
+                            <label for="name" class="product-form__info-name">Имя *</label>
+                            <span class="info-name__error-message">Заполните поле</span>
+                        </div>
+                        <div class="product-form__info-item">
+                            <input type="text" class="product-form__info-field" onkeydown="checkFilledInput(this);" onkeyup="labelFilledInput(this);" name="phone" id="phone" data-req>
+                            <label for="phone" class="product-form__info-name">Телефон *</label>
+                            <span class="info-name__error-message">Укажите телефон</span>
+                        </div>
+                        <div class="product-form__info-item">
+                            <input class="modal-form__button" type="submit" value="Оставить заявку">
+                        </div>
+                    </div>
+                </form>
+            </div>
+    
 
         <div class="page-header">
             <div class="page-header-wrapper">
@@ -188,6 +211,7 @@
 
     </header>
 
+
     <div class="stamppage">
         <div class="stamppage-wrapper">
             <div class="stamppage-promo">
@@ -201,7 +225,7 @@
                     </div>
                     <h1 class="stamppage-header">Изготовление печатей и штампов от 1 часа*</h1>
                     <p class="stamppage-description">Делаем новые печати и печати по оттиску для ИП, фирм ООО, Врачей, Кадастровых инженеров. Офис в Нахабино</p>
-                    <a class="stamppage-button" href="#">Быстрый заказ</a>
+                    <a class="stamppage-button" href="javascript:void(0);" onclick="modalFormCall();">Быстрый заказ</a>
                 </div>
                 <div class="stamppage-img">
                     <img src="/img/john.png" alt="">
@@ -1234,7 +1258,8 @@
 
 
 
-
+    <script src="js/cleave.min.js"></script>
+    <script src="js/cleave-phone.ru.js"></script>
     <script src="js/common.js"></script>
 </body>
 

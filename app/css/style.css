@@ -748,6 +748,199 @@ h6 {
   margin-bottom: 15px;
   margin-top: 20px;
 }
+.seo-form {
+  max-width: 100%;
+  padding: 40px;
+  border: 1px solid #f3f3f3;
+  background: #ececec;
+}
+.page {
+  max-width: 100%;
+}
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+.product-form__info-items {
+  margin-bottom: 64px;
+}
+.page-button {
+  padding: 16px 32px 16px 32px;
+  font-family: 'Montserrat Medium';
+  font-size: 18px;
+  background: #FFCC4D;
+  box-shadow: 0px 4px 6px rgba(255, 204, 77, 0.36);
+  text-decoration: none;
+  color: #000;
+  border-radius: 4px;
+  transition-duration: 0.3s;
+}
+.page-button:hover {
+  background: #FFB600;
+  box-shadow: 0px 4px 20px rgba(211, 168, 59, 0.36);
+}
+.firm-item__label {
+  font-family: 'Open-Sans-Extra';
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-right: -1px;
+  border: 1px solid #2E40BC;
+  color: #4352BC;
+}
+input[type=radio]:checked + .firm-item__label {
+  color: #fff;
+  background: #4352BC;
+}
+.product-form__info-item {
+  position: relative;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-family: Open-Sans;
+  color: #000;
+}
+.product-form__info-field {
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  -webkit-appearance: none;
+}
+.product-form__info-name {
+  color: #999;
+  cursor: text;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  font-size: 16px;
+}
+.product-form__info-field:focus {
+  outline: none;
+  border-bottom-color: #7a09e4;
+}
+.product-form__info-field:focus ~ .product-form__info-name {
+  top: -10px;
+  font-size: 11px;
+  color: #b1b1b1;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(7, 27, 40, 0.9);
+  padding-top: 60px;
+}
+.modal-form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  width: 86%;
+  max-width: 480px;
+  margin: 5px auto;
+  padding: 24px 16px;
+  background-color: #ffffff;
+}
+.modal-form__title {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  color: #333333;
+  font-size: 18px;
+  font-family: 'Open-Sans-Bold';
+  text-align: center;
+}
+/* .modal-form__text {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+} */
+.modal-form__button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 16px 0;
+  background: #FFCC4D;
+  /* background-color: #FFCC4D; */
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Montserrat-Bold';
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(255, 204, 77, 0.36);
+  color: #0B0000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+.modal-form__button:hover {
+  background: #FFB600;
+}
+.modal-form input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/*_______________ Invalid Field _______________*/
+/* #region */
+.form__field_invalid input,
+.form__field_invalid input {
+  border-bottom-color: #f45a57;
+}
+.form__field_invalid .product-form__info-field::-webkit-input-placeholder {
+  opacity: 0.9;
+  color: #f45a57;
+}
+.form__field_invalid .product-form__info-field::-moz-placeholder {
+  opacity: 0.9;
+  color: #f45a57;
+}
+.form__field_invalid .product-form__info-field:-moz-placeholder {
+  opacity: 0.9;
+  color: #f45a57;
+}
+.form__field_invalid .product-form__info-field:-ms-input-placeholder {
+  opacity: 0.9;
+  color: #f45a57;
+}
+.info-name__error-message {
+  opacity: 0;
+}
+/* #endregion */
+.close {
+  position: absolute;
+  right: 4px;
+  top: -8px;
+  padding: 8px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+}
+.close:hover,
+.close:focus {
+  color: #152884;
+  cursor: pointer;
+}
+/*!!! IMPORTANT: This class - must be added in Checkout.css after [.product-form__info-field:focus ~ .product-form__info-name] !!!*/
+.product-form__info-name_filled {
+  top: -10px;
+  font-size: 11px;
+  color: #b1b1b1;
+}
 .stamppage {
   max-width: 100%;
   padding-bottom: 66px;
